@@ -91,8 +91,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .current {
@@ -130,6 +130,7 @@ img {
 }
 
 .main {
+  max-width: 1600px;
   background-color: var(--background-dark);
   margin-left: auto;
   margin-right: auto;
@@ -234,10 +235,11 @@ img {
 .feature-box {
   background-color: #f5f4fa;
   width: 270px;
+  height: 120px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -309,7 +311,8 @@ img {
 }
 
 .team-link {
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,9 +340,11 @@ img {
 }
 
 .clients-item {
+  width: 170px;
+  height: 92px;
   display: flex;
   align-items: center;
-  padding: 16px 32px;
+  justify-content: center;
   border: 1px solid rgba(175, 177, 184, 1);
   color: rgba(175, 177, 184, 1);
   border-radius: 4px;
@@ -384,6 +389,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .join-us {
@@ -398,7 +404,8 @@ img {
 }
 
 .join-link {
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,13 +420,12 @@ img {
   color: var(--white-color);
 }
 
-.join-us h3 {
+.join-us p {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-}
-
-.join-us {
-  padding-top: 12px;
 }
 
 .nav-link:hover,
@@ -458,11 +464,10 @@ img {
   border-radius: 4px;
 }
 
-.portfolio-button:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.portfolio-button:hover,
 .portfolio-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -507,7 +512,6 @@ img {
   cursor: pointer;
 }
 
-.flex-element:focus,
 .flex-element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
